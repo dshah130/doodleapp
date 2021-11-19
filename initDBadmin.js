@@ -8,15 +8,15 @@ let conn = mysql.createConnection({
 });
 
 conn.connect();
-/*
-conn.query(`Drop Table Timeslot`,
-                (err,rows,fields) => {
-                    if (err)
-                        console.log(err);
-                    else
-                        console.log('Table Dropped');
-                }
-            )
+
+// conn.query(`Drop Table Timeslot`,
+//                 (err,rows,fields) => {
+//                     if (err)
+//                         console.log(err);
+//                     else
+//                         console.log('Table Dropped');
+//                 }
+//             )
 
 conn.query(`CREATE TABLE Timeslot
             (
